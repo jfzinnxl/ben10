@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url('caminho/para/sua/imagem.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #1e201f; /* Cor de fundo principal */
+    color: #ffffff; /* Cor do texto */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Define o corpo como um contexto relativo */
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul li {
+    display: inline-flex;
+    padding: 15px;
+}
+
+.conteiner {
+    background-color: rgb(19, 19, 19);
+    padding:10px 100px;
+  
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 0 20px black;
+
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+.conteiner .logo h2 {
+
+
+    padding-top: 30PX;
+   
+    
+    
+    transition: 500ms;
+    
+}
+
+
+.conteiner .logo h2:hover {
+    transform: scale(1.2);
+    color: green;
+    
+
+
+}
+.conteiner .conteiner-nav {
+    display: flex;
+}
+
+
+.conteiner .conteiner-nav ul {
+        display: flex;
+}
+
+
+.conteiner .conteiner-nav ul li {
+    list-style: none;
+    padding-top: 20px;
+    margin:20px ;
+    
+} 
+
+
+.conteiner .conteiner-nav ul li a {
+    color: rgba(82, 255, 47, 0.808)  ;
+    transition: 599ms;
+}
+
+
+.conteiner .conteiner-nav ul li a:hover {
+
+
+    color:white ;
+    background-color: green;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+
+
+
+main {
+    background-color: rgb(22, 21, 21);
+    width: 1000px;
+    margin: auto;
+    margin-top:50px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgb(22, 22, 22);
+    padding: 30px;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; /* Define o conteúdo como um contexto relativo */
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+h2{
+    margin-bottom: 30px ;
+}
+
+
+a {
+    color: #3498db; /* Cor dos links */
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #2980b9; /* Cor dos links ao passar o mouse */
+}
+
+
+/* Imagem do Ben 10 */
+.ben10-image { 
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px; /* Largura da imagem */
+    height: auto; /* Altura ajustável para manter a proporção */
+}
+
+
+/* Imagem do vilão */
+.villain-image {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 150px; /* Largura da imagem */
+    height: auto; /* Altura ajustável para manter a proporção */
+}
+.container img {
+       max-width: 200px;
+       width: auto;
+}
+.ben10 {
+    display: flex;
+    justify-content: center;
+}
+.ben10 img {
+    width: 300px;
+    margin: 30px;
+}
+
+
+.story p{
+    margin-bottom: 20PX;
+}
+
+form {
+    text-align: center;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: 400px;
+}
+
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: 400px;
+    height: 200px;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+ 
+.game {
+    display: flex;
+        justify-content: center;
+
+        margin: auto;
+
+        margin-top: 30px;
+
+    background-color: green;
+    padding: 10px;
+    border-radius: 15px;
+}
+.game a {
+    
+
+    
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/* ajuste para o mobile */
+@media screen and (max-width: 440px) {
+
+
+    main {
+        width: 100%;
+    }
+
+
+    .ben10 {
+        display: block;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ben10 img {
+       flex-direction: column;
+       width: 60%;
+    
+    }
+
+    
+    button {
+        display: flex;
+            justify-content: center;
+
+        background-color: green;
+        padding: 7px;
+        border-radius: 15px;
+    }
+    button a {
+        color: white;
+        font-size: 16px;
+    }
+}
